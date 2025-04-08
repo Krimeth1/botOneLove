@@ -22,7 +22,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isCommand()) return;
 
     // ส่งข้อมูลการใช้งานให้คุณในแชทส่วนตัว
-    const logChannel = client.channels.cache.get('1359227037092675704'); 
+    const logChannel = client.channels.cache.get('ใส่เลขของคุณ'); 
     if (!logChannel) {
         console.error('ไม่พบช่องที่มี ID นี้');
     } else {
@@ -43,7 +43,7 @@ client.on(Events.InteractionCreate, async interaction => {
         }
 
         const members = voiceChannel.members;
-        const targetChannelId = '1358757355306614928'; // แก้ไอดีห้องเอง
+        const targetChannelId = 'แก้ไอดีห้องเอง'; // แก้ไอดีห้องเอง
         const targetChannel = interaction.guild.channels.cache.get(targetChannelId);
 
         if (!targetChannel || targetChannel.type !== ChannelType.GuildVoice) { // ตรวจสอบห้องเสียง
